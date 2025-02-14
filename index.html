@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Freaknutter</title>
+
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body>
+    <center>
+        <h2>Beste Stars,</h2>
+
+        <img src="stars.png"> <br>
+        <p style="font-size: 20px; padding-bottom: 10px; margin-top: 0;">(foto van Stars voor reference)</p>
+        
+        <hr>
+
+        <p>
+            Als je deze pagina hebt bereikt, moet je Mikey dit codewoord doorgeven:
+            <h3>"Freaknutter"</h3>
+            Hij zal je in respons de sleutel geven om de laatste pagina te ontgrendelen.
+        </p>
+
+        <hr>
+
+        <p style="margin-bottom: 5px;">Sleutel entry:</p>
+        <input type="text" id="sleutelInput">
+    </center>
+
+    <script>
+        document.getElementById("sleutelInput").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                checkInput();
+            }
+        });
+
+        function checkInput() {
+            let inputValue = document.getElementById("sleutelInput").value;
+            let lowercasedValue = inputValue.toLowerCase();
+        
+            if (lowercasedValue === "boner") {
+                alert("Boner alert!! Dit is correct.")
+                window.location.href = "boner.html";
+            } else {
+                alert("WRONG!!! bozo ahh.");
+            }
+        }
+    </script>
+</body>
+
+</html>
